@@ -16,6 +16,8 @@
 		711C37141FB9719D00784EF1 /* ScorseroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C37131FB9719D00784EF1 /* ScorseroTests.swift */; };
 		711C371F1FB9719D00784EF1 /* ScorseroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C371E1FB9719D00784EF1 /* ScorseroUITests.swift */; };
 		711C372D1FB9736F00784EF1 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C372C1FB9736F00784EF1 /* StatusBarController.swift */; };
+		711C37301FBABB0D00784EF1 /* ScoreTrayViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711C372E1FBABB0D00784EF1 /* ScoreTrayViewItem.swift */; };
+		711C37311FBABB0D00784EF1 /* ScoreTrayViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 711C372F1FBABB0D00784EF1 /* ScoreTrayViewItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		711C371E1FB9719D00784EF1 /* ScorseroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorseroUITests.swift; sourceTree = "<group>"; };
 		711C37201FB9719D00784EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		711C372C1FB9736F00784EF1 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatusBarController.swift; path = tray/StatusBarController.swift; sourceTree = "<group>"; };
+		711C372E1FBABB0D00784EF1 /* ScoreTrayViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScoreTrayViewItem.swift; path = tray/ScoreTrayViewItem.swift; sourceTree = "<group>"; };
+		711C372F1FBABB0D00784EF1 /* ScoreTrayViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ScoreTrayViewItem.xib; path = tray/ScoreTrayViewItem.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				711C370A1FB9719D00784EF1 /* Scorsero.entitlements */,
 				711C37011FB9719D00784EF1 /* Document.xcdatamodeld */,
 				711C372C1FB9736F00784EF1 /* StatusBarController.swift */,
+				711C372E1FBABB0D00784EF1 /* ScoreTrayViewItem.swift */,
+				711C372F1FBABB0D00784EF1 /* ScoreTrayViewItem.xib */,
 			);
 			path = Scorsero;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				711C37051FB9719D00784EF1 /* Assets.xcassets in Resources */,
+				711C37311FBABB0D00784EF1 /* ScoreTrayViewItem.xib in Resources */,
 				711C37081FB9719D00784EF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				711C37301FBABB0D00784EF1 /* ScoreTrayViewItem.swift in Sources */,
 				711C37031FB9719D00784EF1 /* Document.xcdatamodeld in Sources */,
 				711C36FE1FB9719D00784EF1 /* ViewController.swift in Sources */,
 				711C36FC1FB9719D00784EF1 /* AppDelegate.swift in Sources */,

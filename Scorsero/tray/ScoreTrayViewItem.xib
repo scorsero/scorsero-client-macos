@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ScoreTrayViewItem" customModule="Scorsero" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="19"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="XuU-le-nW3">
+                    <rect key="frame" x="0.0" y="0.0" width="278" height="19"/>
+                    <subviews>
+                        <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eau-Vn-Duk">
+                            <rect key="frame" x="0.0" y="0.0" width="278" height="19"/>
+                            <buttonCell key="cell" type="roundRect" bezelStyle="roundedRect" alignment="center" state="on" transparent="YES" imageScaling="proportionallyDown" inset="2" id="U6L-Sm-8Yo">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="cellTitle"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="clickMe:" target="-2" id="bsf-Ta-e56"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="eau-Vn-Duk" firstAttribute="top" secondItem="XuU-le-nW3" secondAttribute="top" id="Whq-i6-0aN"/>
+                        <constraint firstAttribute="trailing" secondItem="eau-Vn-Duk" secondAttribute="trailing" id="e7S-B1-8ye"/>
+                        <constraint firstItem="eau-Vn-Duk" firstAttribute="leading" secondItem="XuU-le-nW3" secondAttribute="leading" id="oRG-4D-1zp"/>
+                        <constraint firstAttribute="bottom" secondItem="eau-Vn-Duk" secondAttribute="bottom" id="z5U-ZH-qfd"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XuU-le-nW3" secondAttribute="trailing" id="Leb-rj-PiD"/>
+                <constraint firstItem="XuU-le-nW3" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="TzP-Sm-Qy9"/>
+                <constraint firstAttribute="bottom" secondItem="XuU-le-nW3" secondAttribute="bottom" id="cik-RD-SZw"/>
+                <constraint firstItem="XuU-le-nW3" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="n8J-1d-cyu"/>
+            </constraints>
+            <point key="canvasLocation" x="-29" y="191.5"/>
+        </customView>
+        <collectionViewItem id="rCa-2Q-Kv1" customClass="ScoreTrayViewItem" customModule="Scorsero" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="XuU-le-nW3" id="gg4-qS-lOt"/>
+            </connections>
+        </collectionViewItem>
+    </objects>
+</document>

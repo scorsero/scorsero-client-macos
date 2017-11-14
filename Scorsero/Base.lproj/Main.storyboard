@@ -22,16 +22,59 @@
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Scorsero" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="rVc-J9-YXx">
+                <customView id="9Ts-b7-tDg">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="zuU-IH-Kjb"/>
-                </imageView>
+                    <subviews>
+                        <scrollView wantsLayer="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0x-uj-EKt">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="120"/>
+                            <clipView key="contentView" drawsBackground="NO" id="Qci-YO-amS">
+                                <rect key="frame" x="1" y="1" width="598" height="118"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <collectionView selectable="YES" id="o9A-YL-Ddt">
+                                        <rect key="frame" x="0.0" y="0.0" width="598" height="158"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                        <collectionViewGridLayout key="collectionViewLayout" maximumNumberOfRows="3" maximumNumberOfColumns="6" id="EXa-kK-0g2">
+                                            <size key="minimumItemSize" width="50" height="50"/>
+                                            <size key="maximumItemSize" width="50" height="50"/>
+                                        </collectionViewGridLayout>
+                                        <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="oBO-yO-a3Y" id="uwg-9t-Z0I"/>
+                                            <outlet property="delegate" destination="oBO-yO-a3Y" id="e0i-Dp-jcS"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                            </clipView>
+                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="eaz-Tv-aVS">
+                                <rect key="frame" x="1" y="144" width="233" height="15"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                            <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="ijU-40-fcy">
+                                <rect key="frame" x="583" y="1" width="16" height="118"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </scroller>
+                        </scrollView>
+                        <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OX8-1L-Fz8">
+                            <rect key="frame" x="169" y="24" width="163" height="96"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        </customView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="c0x-uj-EKt" secondAttribute="trailing" id="Eqg-Dq-EuD"/>
+                        <constraint firstItem="c0x-uj-EKt" firstAttribute="leading" secondItem="9Ts-b7-tDg" secondAttribute="leading" id="JER-v7-9t5"/>
+                        <constraint firstItem="c0x-uj-EKt" firstAttribute="top" secondItem="9Ts-b7-tDg" secondAttribute="top" id="NUI-mE-KnM"/>
+                        <constraint firstAttribute="bottom" secondItem="c0x-uj-EKt" secondAttribute="bottom" id="q6d-v6-spA"/>
+                    </constraints>
+                </customView>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <customObject id="oBO-yO-a3Y" customClass="StatusBarController" customModule="Scorsero">
                     <connections>
+                        <outlet property="collectionView" destination="o9A-YL-Ddt" id="7yr-6p-TNU"/>
                         <outlet property="statusMenu" destination="AYu-sK-qS6" id="sKU-1L-U3p"/>
-                        <outlet property="testView" destination="rVc-J9-YXx" id="bMs-Nk-Rip"/>
+                        <outlet property="testView" destination="9Ts-b7-tDg" id="waE-q9-nCk"/>
                         <outlet property="trayViewMenu" destination="1Xt-HY-uBw" id="zjE-6f-Ueb"/>
                     </connections>
                 </customObject>
